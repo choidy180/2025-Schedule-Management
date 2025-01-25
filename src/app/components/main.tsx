@@ -21,6 +21,7 @@ const Container = styled.div`
             max-width: calc(100vw - 40px);
             height: 600px;
             max-height: calc(100vw - 40px);
+            transform: translateY(100px);
             img {
                 object-fit: cover;
                 cursor: pointer;
@@ -47,16 +48,16 @@ const Container = styled.div`
                     margin-left: 8px;
                 }
                 .title {
-                    font-size: 10vw;
+                    font-size: 11rem;
                     line-height: 7rem;
                     font-family: "Smooch Sans", serif;
                     font-weight: 100; 
                     letter-spacing: .14rem;
                 }
                 .designer {
-                    font-size: 1.83vw;
+                    font-size: 2rem;
                     line-height: 2rem;
-                    letter-spacing: .38rem;
+                    letter-spacing: .36rem;
                     word-spacing: .4rem;
                     margin-left: 8px;
                     color: #eb4d4b;
