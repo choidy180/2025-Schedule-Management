@@ -1,5 +1,5 @@
-import MainComponent from "./components/main";
-import ResumeComponent from "./components/resume";
+import MainComponent from "../components/main";
+import ResumeComponent from "../components/resume";
 
 export default function Home() {
     return (

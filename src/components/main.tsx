@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import styled from "styled-components";
+import { Smooch_Sans } from 'next/font/google';
 
 const Container = styled.div`
     width: 100%;
@@ -84,6 +85,11 @@ const Container = styled.div`
     }
 `
 
+const smooch = Smooch_Sans({
+    subsets:['latin'],
+    weight: ['200'],
+})
+
 export default function MainComponent(){
     return (
         <>
@@ -98,7 +104,7 @@ export default function MainComponent(){
                         />
                         <div className="main_text_box">
                             <p className="year">1999-2025</p>
-                            <p className="title">PORTFOLIO</p>
+                            <p className={`title ${smooch.className}`}>PORTFOLIO</p>
                             <p className="designer">an advertising designer</p>
                         </div>
                     </div>
@@ -109,5 +115,5 @@ export default function MainComponent(){
                 </div>
             </Container>
         </>
-    )
+    )                                                                
 }
