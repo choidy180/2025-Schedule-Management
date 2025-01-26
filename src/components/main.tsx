@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import styled from "styled-components";
-import { Smooch_Sans } from 'next/font/google';
+import { DM_Serif_Text } from 'next/font/google';
 
 const Container = styled.div`
     width: 100%;
@@ -49,10 +49,8 @@ const Container = styled.div`
                     margin-left: 8px;
                 }
                 .title {
-                    font-size: 11rem;
+                    font-size: 6.4rem;
                     line-height: 7rem;
-                    font-family: "Smooch Sans", serif;
-                    font-weight: 100; 
                     letter-spacing: .14rem;
                 }
                 .designer {
@@ -85,10 +83,10 @@ const Container = styled.div`
     }
 `
 
-const smooch = Smooch_Sans({
+const DmSerifText = DM_Serif_Text({
     subsets:['latin'],
-    weight: ['200'],
-})
+    weight: ["400"],
+});
 
 export default function MainComponent(){
     return (
@@ -104,7 +102,7 @@ export default function MainComponent(){
                         />
                         <div className="main_text_box">
                             <p className="year">1999-2025</p>
-                            <p className={`title ${smooch.className}`}>PORTFOLIO</p>
+                            <p className={`title ${DmSerifText.className}`}>PORTFOLIO</p>
                             <p className="designer">an advertising designer</p>
                         </div>
                     </div>
