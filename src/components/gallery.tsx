@@ -3,6 +3,7 @@
 import styled from "styled-components";
 import { DM_Serif_Text } from 'next/font/google';
 import PageNumber from "@/common/page-number";
+import Image from "next/image";
 
 const Container = styled.div`
     width: 100%;
@@ -67,6 +68,12 @@ const Container = styled.div`
                         height: 500px;
                         margin-top: 10px;
                         border: 4px solid #eb4d4b;
+
+                        img {
+                            height: 100%;
+                            object-fit: cover;
+                            cursor: pointer;
+                        }
                     }
                     .gallery-title {
                         width: 100%;
@@ -137,7 +144,12 @@ export default function GalleryComponent(){
                             <div className="box box1">
                                 <p className="numbering">01.</p>
                                 <div className="content-image-box">
-
+                                    <Image
+                                        src={`/images/7fad6c52-65a5-4889-9a61-fcbf68f68a82.jpg`}
+                                        width={550}
+                                        height={550}
+                                        alt="..."
+                                    />
                                 </div>
                                 <p className="gallery-title">
                                     <b>GALLERY-CONTENT 1</b>
@@ -163,7 +175,12 @@ export default function GalleryComponent(){
                             <div className="box box2">
                                 <p className="numbering">02.</p>
                                 <div className="content-image-box">
-
+                                    <Image
+                                        src={`/images/7fad6c52-65a5-4889-9a61-fcbf68f68a82.jpg`}
+                                        width={550}
+                                        height={550}
+                                        alt="..."
+                                    />
                                 </div>
                                 <p className="gallery-title">
                                     <b>GALLERY-CONTENT 2</b>
@@ -189,7 +206,12 @@ export default function GalleryComponent(){
                             <div className="box box3">
                                 <p className="numbering">03.</p>
                                 <div className="content-image-box">
-
+                                    <Image
+                                        src={`/images/7fad6c52-65a5-4889-9a61-fcbf68f68a82.jpg`}
+                                        width={550}
+                                        height={550}
+                                        alt="..."
+                                    />
                                 </div>
                                 <p className="gallery-title">
                                     <b>GALLERY-CONTENT 3</b>
@@ -215,7 +237,12 @@ export default function GalleryComponent(){
                             <div className="box box4">
                                 <p className="numbering">04.</p>
                                 <div className="content-image-box">
-
+                                    <Image
+                                        src={`/images/7fad6c52-65a5-4889-9a61-fcbf68f68a82.jpg`}
+                                        width={550}
+                                        height={550}
+                                        alt="..."
+                                    />
                                 </div>
                                 <p className="gallery-title">
                                     <b>GALLERY-CONTENT 4</b>
