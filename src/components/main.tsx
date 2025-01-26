@@ -3,6 +3,7 @@
 import Image from "next/image";
 import styled from "styled-components";
 import { DM_Serif_Text } from 'next/font/google';
+import PageNumber from "@/common/page-number";
 
 const Container = styled.div`
     width: 100%;
@@ -106,10 +107,7 @@ export default function MainComponent(){
                             <p className="designer">an advertising designer</p>
                         </div>
                     </div>
-                    <div className="page_number">
-                        <span>1</span>
-                        <div className="bar"/>
-                    </div>
+                    <PageNumber number={1}/>
                 </div>
             </Container>
         </>

@@ -1,3 +1,4 @@
+import GalleryComponent from "@/components/gallery";
 import MainComponent from "../components/main";
 import ResumeComponent from "../components/resume";
 
@@ -7,6 +8,7 @@ export default function Home() {
             <title>PORTFOLIO</title>
             <MainComponent/>
             <ResumeComponent/>
+            <GalleryComponent/>
         </>
     );
 }

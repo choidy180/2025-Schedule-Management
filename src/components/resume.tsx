@@ -9,6 +9,7 @@ import { RiNextjsLine } from "react-icons/ri";
 import { DiMysql } from "react-icons/di";
 import { IoLogoFirebase } from "react-icons/io5";
 import { SiAdobephotoshop } from "react-icons/si";
+import PageNumber from "@/common/page-number";
 
 const Container = styled.div`
     width: 100%;
@@ -384,6 +385,7 @@ export default function ResumeComponent(){
                             <p className="my_self ml20">choidy180@naver.com</p>
                         </div>
                     </div>
+                    <PageNumber number={2}/>
                 </div>
             </Container>
         </>
