@@ -1,6 +1,7 @@
 import GalleryComponent from "@/components/gallery";
 import MainComponent from "../components/main";
 import ResumeComponent from "../components/resume";
+import ContentTitleComponent from "@/components/content-title";
 
 export default function Home() {
     return (
@@ -9,6 +10,7 @@ export default function Home() {
             <MainComponent/>
             <ResumeComponent/>
             <GalleryComponent/>
+            <ContentTitleComponent/>
         </>
     );
 }
