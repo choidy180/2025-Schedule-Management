@@ -16,20 +16,20 @@ const Container = styled.div`
         background-image: url('images/wallpaperflare.com_wallpaper.jpg');
         background-size: cover;
         background-position: center;
-        .content-container {
+        .content-image-box {
             width: 100%;
             max-width: 1920px;
             min-height: 1000px;
             display: flex;
             flex-direction: column;
             justify-content: start;
-            align-items: start;
+            align-items: center;
 
             .img-box {
-                height: 400px;
-                width: auto;
+                width: 440px;
+                height: 600px;
+
                 img {
-                    width: 300px;
                     height: 100%;
                     object-fit: cover;
                 }
