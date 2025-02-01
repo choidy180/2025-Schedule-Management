@@ -2,6 +2,7 @@
 import PageNumber from "@/common/page-number";
 import Image from "next/image";
 import styled from "styled-components";
+import { DM_Serif_Text } from 'next/font/google';
 
 const Container = styled.div`
     width: 100%;
@@ -25,19 +26,43 @@ const Container = styled.div`
             justify-content: start;
             align-items: center;
 
+            .content-numbering {
+                color: #eb4d4b;
+                font-weight: 600;
+                font-size: 1.4rem;
+                margin-bottom: 10px;
+            }
             .img-box {
                 width: 440px;
                 height: 600px;
+                border: 6px solid #eb4d4b;
 
                 img {
                     height: 100%;
                     object-fit: cover;
                 }
             }
-            
+            .content-title {
+                color: #1e3799;
+                font-size: 6rem;
+                line-height: 5rem;
+                margin-top: 24px;
+                text-align: center;
+            }
+
+            .content-year {
+                font-size: 1.4rem;
+                color: #eb4d4b;
+                margin-top: 20px;
+            }
         }
     }
 `
+
+const DMSerifText = DM_Serif_Text({
+    subsets:['latin'],
+    weight: ["400"],
+});
 
 export default function ContentTitleComponent(){
     return (
@@ -45,6 +70,7 @@ export default function ContentTitleComponent(){
              <Container>
                 <div className="wrapper">
                     <div className="content-image-box">
+                        <p className="content-numbering">01.</p>
                         <div className="img-box">
                             <Image
                                 src={`/images/7fad6c52-65a5-4889-9a61-fcbf68f68a82.jpg`}
@@ -53,6 +79,8 @@ export default function ContentTitleComponent(){
                                 alt="..."
                             />
                         </div>
+                        <p className={`content-title ${DMSerifText.className}`}>CONTENT<br/>TITLE-1</p>
+                        <p className="content-year">| 0000 - 9999 |</p>
                     </div>
                 </div>
                 <PageNumber number={4}/>
