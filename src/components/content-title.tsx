@@ -35,11 +35,26 @@ const Container = styled.div`
             .img-box {
                 width: 440px;
                 height: 600px;
-                border: 6px solid #eb4d4b;
+                border: 4px solid #eb4d5b;
 
                 img {
                     height: 100%;
                     object-fit: cover;
+                }
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: -2px;
+                    top: -2px;
+                    right: -2px;
+                    bottom: -2px;
+                    background-color: red;
+                    z-index: 0;
+                    filter: blur(20px);
+                }
+                &::before,
+                &::after {
+                    background: linear-gradient(235deg, #eb4d4b, #1e3799 , #e9e9e9);
                 }
             }
             .content-title {
