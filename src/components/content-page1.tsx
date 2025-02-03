@@ -7,7 +7,7 @@ import PageNumber from "@/common/page-number";
 const ContentPage1 = () => {
     return (
         <ContentContainer>
-            <div className="123">123</div>
+            123
         </ContentContainer>
     )
 }
