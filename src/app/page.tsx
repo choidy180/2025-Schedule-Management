@@ -1,3 +1,4 @@
+import DeepInput from "@/components/deep-input";
 import TimeText from "@/components/time";
 
 export default function Home() {
@@ -5,6 +6,7 @@ export default function Home() {
         <>
             <title>PAGE</title>
             <TimeText/>
+            <DeepInput/>
         </>
     );
 }
