@@ -13,17 +13,17 @@ const Container = styled.div`
 `
 
 const TimeText = () => {
-    const [time, setTime] = useState(new Date());
+    const [time, setTime] = useState<string | null>(null);
     useEffect(()=> {
         const interval = setInterval(()=> {
-            setTime(new Date());
+            setTime(new Date().toLocaleTimeString("en-US", { hour12: false, hour: "2-digit", minute: "2-digit", second: "2-digit" }));
         }, 1000);
 
         return () => clearInterval(interval);
     },[]);
     return (
         <Container>
-            {time.toLocaleTimeString("en-US", { hour12: false, hour: "2-digit", minute: "2-digit", second: "2-digit" })}
+            {time}
         </Container>
     )
 }
