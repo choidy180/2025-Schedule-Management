@@ -1,3 +1,4 @@
+import BackGroundImageComponent from '@/components/background-image';
 import '../styles/globals.css'
 
 
@@ -11,6 +12,7 @@ export default function RootLayout({
             <body
               className={``}
             >
+                <BackGroundImageComponent/>
                 {children}
             </body>
         </html>
